@@ -1,0 +1,182 @@
+
+/* General */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    background-color: #f9f9f9;
+    color: #000;
+    line-height: 1.6;
+    img{
+        place-items: center;
+    }
+}
+/* header */
+header {
+    background: #e3efefff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 13%;
+    width: 100%;
+    padding: 1% 1%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del menú */
+.nav-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 50px; /* Ajustar según la altura del header */
+    right: 0;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: left;
+    z-index: 1001;
+}
+
+.nav-menu li {
+    padding: 5%;
+    border-bottom: 1px solid #ddd;
+}
+
+.burguer-icon {
+    width: 5%;
+    min-width: 50px;
+    cursor: pointer;
+    transition: 1.25s;
+    position: absolute;
+    right: 5%; 
+    top: 10%;
+}
+.burguer-container:hover .burguer-icon{
+    transform: scale(1.4);
+}
+/* Mostrar el menú cuando se pasa el mouse sobre el ícono */
+.burguer-container:hover .nav-menu {
+    display: block;
+}
+
+.logoHome{
+    transition: 2s;
+}
+.logoHome:hover{
+    transform: scale(1.25);
+}
+
+/* tipografia */
+h1{
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+}
+
+h2,h3,h4{
+    color:#9670cd;
+    font-family: "Bebas Neue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    color :#000;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* especifico */
+
+.texto{
+    margin: 2% 10% 5% 10%;
+    text-align: justify;
+}
+.primerElemento {
+    margin-top: 7%; 
+}
+.lineaVioleta{
+    background-color: #9670cd67;
+    height: fit-content;
+    h2{
+        color:#000;
+    }
+}
+
+.lineaGris{
+    background-color: rgba(209, 216, 219, 0.534);
+    width: 100%;
+}
+.item{
+    border-color: black;
+    border: 1px solid #616161;
+    padding: 5%;
+    height: fit-content;
+}
+
+button {
+    z-index: 10;
+    cursor: pointer;
+    top: 50%;
+    background-color: #9670cd;
+    color:#f9fbfd;;
+    font-weight: bolder;
+    transition: 1 seg;
+    padding:15px;
+    align-items: center;
+    min-height: 44px;
+    border: none;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: #f9fbfd;
+    color: #9670cd;
+    border: #9670cd;
+}
+a{
+    color: #000;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+    transition: 1 seg;
+}
+
+a:hover{
+    color: #e756fc;
+    text-decoration: none;
+}
+.contImg{
+    height: auto;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; 
+}
+.contImg img{
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.violetita{
+    color: #9670cd;
+}
+/* Footer */
+footer {
+    background-color: #e3efefff;   
+    text-align: center;
+    width: 100%; 
+    padding: 5%;
+}

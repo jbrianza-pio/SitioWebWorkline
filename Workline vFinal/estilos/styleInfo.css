@@ -1,0 +1,35 @@
+.container {
+    display: grid; 
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto auto auto; 
+    gap: 0px 0px; 
+    grid-template-areas:
+      "tituloInfo tituloInfo"
+      "info info"
+      "cuerpo-izq foto-der"
+      "foto-izq cuerpo-der"; 
+  }
+.info{
+  grid-area: info;
+}
+.tituloInfo { 
+  grid-area: tituloInfo; 
+}
+
+  .cuerpo-izq { 
+    grid-area: cuerpo-izq;
+}
+  .foto-der { 
+    grid-area: foto-der; 
+}
+  .foto-izq {
+    grid-area: foto-izq; 
+}
+  .cuerpo-der { 
+    grid-area: cuerpo-der; 
+}
+
+.explicacionText{
+  text-align:  justify;
+  padding: 5%;
+}

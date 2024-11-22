@@ -1,0 +1,87 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    grid-template-areas:
+        "foto-encuesta1 texto-encuesta1"
+        "texto-encuesta2 foto-encuesta2"
+        "grafico-barra grafico-barra";
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.primerElemento {
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.foto-encuesta1 {
+    grid-area: foto-encuesta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    width: 100%;
+    padding-left: 2rem;
+}
+.foto-encuesta1 img {
+    max-width: 110%;
+    object-fit: cover;
+    border-radius: 10px; /* Opcional: Añade bordes redondeados */
+}
+
+.foto-encuesta2 {
+    grid-area: foto-encuesta2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    width: 100%;
+}
+.foto-encuesta2 img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Opcional: Añade bordes redondeados */
+    padding-right: 2rem;
+}
+
+.texto-encuesta1 {
+    grid-area: texto-encuesta1;
+    padding-top: 6rem;
+    text{
+        text-align:justify ;
+    }
+}
+
+.texto-encuesta2 {
+    grid-area: texto-encuesta2;
+    padding-top: 8rem;
+}
+
+.grafico-barra {
+    grid-area: grafico-barra;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    width: 50%;
+    margin: 0 25% 0 25%;
+}
+.grafico-barra img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding: 25px 10px 5px 10px;
+}

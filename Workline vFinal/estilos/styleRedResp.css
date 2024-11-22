@@ -1,0 +1,60 @@
+.container {
+    gap: 20px;
+    padding: 0 5% 0 5%;
+}
+
+@media screen and (max-width: 1350px) {
+    h2 {
+        font-size: 20px;
+    }
+    .container {
+        padding: 0 5% 5% 5%;
+    }
+    .container img {
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto; 
+        grid-template-rows: auto; 
+        gap: 0px; 
+        grid-template-areas:
+        "primerElemento"
+        "izq"
+        "der"
+        "sectorTexto";
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    .image-side {
+        z-index: 4;
+    }
+    .text-side1{
+        background-color: rgba(1, 1, 1, 0);
+        width: 100%;
+        clip-path:none;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .text-side1{
+        padding: 0%;
+        display: flex;
+        flex-direction:row;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    
+}

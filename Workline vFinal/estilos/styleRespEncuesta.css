@@ -1,0 +1,39 @@
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 10px;
+        grid-template-areas:
+            "texto-encuesta1"
+            "foto-encuesta1"
+            "texto-encuesta2"
+            "foto-encuesta2"
+            "grafico-barra";
+    }
+    .foto-encuesta2 {
+        justify-content: center;
+    }
+    .foto-encuesta1, .foto-encuesta2 {
+        width: 100%;
+    }
+    .lado1, .lado2 {
+        padding: 20px 20px 50px 20px;
+    }
+    .grafico-barra {
+        width: 100%;
+        margin: 0%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+}

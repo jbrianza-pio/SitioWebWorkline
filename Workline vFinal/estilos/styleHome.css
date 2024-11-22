@@ -1,0 +1,105 @@
+/* General */
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #000;
+    line-height: 1.6;
+}
+
+.primerElemento {
+    padding-top: 50px;
+}
+
+.foto-der img {
+    display: block;
+    margin: auto;
+}
+
+#home-image{
+    display: block;
+    width: 100%;
+    height: auto;    
+    background-color: #4c5e91; 
+    margin-bottom: 100px;
+}
+
+/* Izq y der de redirecciones */
+
+.container {
+    background-color: #9670cd67;
+    margin-top: 100px;
+    padding: 100px;
+    display: grid; 
+    grid-template-columns:  1fr 1fr;
+    gap: 20px; 
+}
+
+.redireccionNombreDeSeccion, .redireccionNombreDeSeccion1{
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redireccionNombreDeSeccion img, .redireccionNombreDeSeccion1 img {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+
+/* Carrusel */
+.carousel {
+    position: relative;  
+    width: 80%; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Contenedor de los elementos del carrousel */
+.carousel-inner {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+/* Cada elemento dentro del carrousel */
+.carousel-item {
+    min-width: 100%; 
+    height: 65vh;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    img{
+        height: 40%;
+    }
+}
+
+/* Flechas */
+button {
+    position: absolute;  /* Posiciona las flechas respecto al contenedor */
+    top: 50%;  
+    transform: translateY(-50%);  /* Ajuste para centrar la flecha */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;  /* Asegura que las flechas estén encima de otros elementos */
+}
+
+/* Flecha izquierda */
+button.prev {
+    left: 100px;  /* Coloca la flecha en el lado izquierdo */
+}
+
+/* Flecha derecha */
+button.next {
+    right: 100px;  /* Coloca la flecha en el lado derecho */
+}
+
+h2 {
+    padding: 50px 0 20px 0;
+}

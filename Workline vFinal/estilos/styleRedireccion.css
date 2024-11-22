@@ -1,0 +1,87 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; /* Permite que las filas se ajusten a la altura del contenido */
+    gap: 0px 0px;
+    grid-template-areas: "izq der";
+    width: 100%; /* Asegura que la grid ocupe el ancho completo */
+    padding-top: 3rem;
+}
+
+.izq, .der {
+    padding: 10px;
+    padding-right: 10px ;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+}
+
+.diagonal-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border: 2px solid #9670cd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diagonal-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.text-side, .text-side1 {
+    background-color: #f9fbfd;
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    clip-path: polygon(0 0, 90% 0, 60% 100%, 0 100%);
+    position: absolute;
+}
+.text-side{
+    z-index: 2;
+    position:relative;
+    left: 0;
+}
+.text-side1{
+    z-index: 5;
+}
+
+.text-side h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #9670cd;
+    margin: 0 0 1rem 0;
+}
+
+.text-side ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+.image-side {
+    width: 100%;
+    height: 100%; /* Asegura que la imagen cubra toda la altura */
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p{
+    text-align: center;
+    padding: 25px 10px 5px 10px;
+}
